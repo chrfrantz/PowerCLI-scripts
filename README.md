@@ -29,11 +29,17 @@ All the following scripts rely on [PowerCLI](https://code.vmware.com/tool/vspher
 #### ManageVAppsForDistListMembers.ps1
 
 * Check variables in script and adapt to your need. Most relevant ones:
-** `$distListName` Outlook distribution list name for which vApps should be instantiated. (user identifiers are extracted from the e-mail addresses in the distribution list.)
-** `$vAppTemplate` vApp template to use for instantiation.
-** `$vAppPrefix` Prefix for each vApp name
-** `$vAppSuffix` Suffix for any vApp
-** `$permission` Permission assigned to user (based on user identifier extracted from e-mail address)
+
+  * `$distListName` Outlook distribution list name for which vApps should be instantiated. (User identifiers are extracted from the e-mail addresses in the distribution list.)
+
+  * `$vAppTemplate` vApp template to use for instantiation.
+
+  * `$vAppPrefix` Prefix for each vApp name
+
+  * `$vAppSuffix` Suffix for any vApp
+
+  * `$permission` Permission assigned to user (based on user identifier extracted from e-mail address)
+
 * Check remaining variables.
 * Run script.
 
