@@ -1,7 +1,13 @@
 # PowerShell-scripts
-Scripts to automate administrative tasks
+Scripts to automate administrative tasks (Author: Christopher Frantz)
+
+Most of those were developed to manage courses infrastructure at the Otago Polytechnic.
+
+This file provides and overview over the folder structure and the contained scripts.
 
 ## CsvOutlookDistListConverter
+
+Scripts related to the generation of Outlook distribution lists from CSV files and vice versa.
 
 ### CsvToOutlookDistList.ps1
 
@@ -12,6 +18,8 @@ Scripts to automate administrative tasks
 * Reads from Outlook distribution list and generates CSV.
 
 ## PowerCLI
+
+Scripts to automate routine tasks for vSphere.
 
 All the following scripts rely on [PowerCLI](https://code.vmware.com/tool/vsphere_powercli/6.0), which needs to be installed on the client machine.
 
