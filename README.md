@@ -21,7 +21,7 @@ Scripts related to the generation of Outlook distribution lists from CSV files a
 
 Scripts to automate routine tasks for vSphere.
 
-All the following scripts rely on [PowerCLI](https://code.vmware.com/tool/vsphere_powercli/6.0), which needs to be installed on the client machine.
+All the following scripts rely on [PowerCLI](https://code.vmware.com/tool/vsphere_powercli/6.0), which needs to be installed on the client machine. Ensure to include the option 'vCloud Air/vCD PowerCLI' (in addition to 'vSphere PowerCLI') during installation.
 
 ### ManageVApps
 
@@ -35,6 +35,10 @@ All the following scripts rely on [PowerCLI](https://code.vmware.com/tool/vspher
 * Run this script to connect to vSphere before running ManageVAppsForDistListMembers.ps1.
 
 #### ManageVAppsForDistListMembers.ps1
+
+* Start Outlook (for distribution list reading).
+
+* Start PowerShell in same security context as Outlook (e.g. both as administrator). If both applications run in different security contexts you will see a COM exception (CO_E_SERVER_EXEC_FAILURE).
 
 * Check variables in script and adapt to your need. Most relevant ones:
 
