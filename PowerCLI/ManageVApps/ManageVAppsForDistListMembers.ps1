@@ -1,8 +1,19 @@
 ﻿# This script creates, deletes, or modifies given vApps based on Outlook distribution lists.
 #
 # Author: Christopher Frantz
-
-# Run 00_ConnectToVCloud.ps1
+# Source: https://github.com/chrfrantz/PowerShell-scripts
+#
+# Revision:
+# 0.1 - Initial release
+#
+# General disclaimer regarding script execution:
+# - Activate execution of scripts after understanding what they do (Command: set-ExecutionPolicy RemoteSigned)
+# - Deactivate execution of scripts if no longer required - leaving it activated is dangerous! (Command: set-ExecutionPolicy Restricted)
+#
+# Instructions:
+# - Configure VCD and Org settings in TemplateGlobals.ps1
+# - Adjust username in ConnectToVSphere.ps1
+# - Run ConnectToVSphere.ps1
 
 # Identify path this script is located in
 $scriptPath = split-path -parent $MyInvocation.MyCommand.Definition

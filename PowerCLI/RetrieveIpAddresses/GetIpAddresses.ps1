@@ -6,9 +6,13 @@
 # Revision:
 # 0.1 - Initial release
 
-# Requirement: 
-# - ConnectToVSphere.ps1, TemplateGlobals.ps1
-# - Adjust values in TemplateGlobals.ps1
+# General disclaimer regarding script execution:
+# - Activate execution of scripts after understanding what they do (set-ExecutionPolicy RemoteSigned)
+# - Deactivate execution of scripts if no longer required - leaving it activated is dangerous! (set-ExecutionPolicy Restricted)
+
+# Instructions: 
+# - Download scripts ConnectToVSphere.ps1, TemplateGlobals.ps1
+# - Adjust values in TemplateGlobals.ps1 and username in ConnectToVSphere.ps1
 # - Connect using the script ConnectToVSphere.ps1 before running this script
 
 
@@ -29,6 +33,8 @@ foreach ($vApp in $vApps) {
                  }      
          }
 }
+
+#$vAppNetworkAdapters now contains names and IP addresses of all VApps in the organisation configured in TemplateGlobals.ps1
 
 # Filter IP addresses based on VApp name and NICs
 #$vAppNetworkAdapters = $vAppNetworkAdapters | where {$_.VAppName.startsWith($vAppIdentifier) -and $_.NIC -eq 'NIC0'}
