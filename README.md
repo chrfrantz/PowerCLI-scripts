@@ -63,3 +63,9 @@ All the following scripts rely on [PowerCLI](https://code.vmware.com/tool/vspher
 * Change server (`$server`) to match target server.
 * Modify network name pattern (`$networkNameToModify`) to match name of virtual networks for which promiscuous mode and forged transmits should be activated.
 * Run script.
+
+### RetrieveIpAddresses
+
+#### GetIpAddresses.ps1
+
+* Follow instructions in script.
