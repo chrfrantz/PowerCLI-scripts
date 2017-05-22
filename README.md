@@ -19,9 +19,11 @@ Scripts related to the generation of Outlook distribution lists from CSV files a
 
 ## PowerCLI
 
-Scripts to automate routine tasks for vSphere.
+Scripts to automate routine tasks for vSphere and vCloud.
 
-All the following scripts rely on [PowerCLI](https://code.vmware.com/tool/vsphere_powercli/6.0), which needs to be installed on the client machine. Ensure to include the option 'vCloud Air/vCD PowerCLI' (in addition to 'vSphere PowerCLI') during installation.
+All the following scripts rely on [PowerCLI](https://www.vmware.com/support/developer/PowerCLI/) (version 6.0), which needs to be installed on the client machine. Ensure to include the features 'vSphere PowerCLI' and 'vCloud Air/vCD PowerCLI' (additional features are optional) during installation.
+
+In PowerShell you will need to enable the execution of scripts (`Set-ExecutionPolicy RemoteSigned`).
 
 ### ManageVApps
 
@@ -31,8 +33,8 @@ All the following scripts rely on [PowerCLI](https://code.vmware.com/tool/vspher
 
 #### ConnectToVSphere.ps1
 
-* Change `username` in script to administrative user.
-* Run this script to connect to vSphere before running ManageVAppsForDistListMembers.ps1.
+* Change `username` in script to administrative username.
+* Run this script (as administrator) to connect to vSphere before running ManageVAppsForDistListMembers.ps1.
 
 #### ManageVAppsForDistListMembers.ps1
 
