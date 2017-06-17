@@ -1,4 +1,5 @@
-﻿
+﻿# VSphere login script for a given user.
+# Check script 'ManageVAppsForDistListMembers.ps1' for usage instructions.
 
 #http://community.spiceworks.com/scripts/show/2655-import-powercli-for-vmware-into-a-regular-ps-shell
 function Import-PowerCLI {
@@ -15,12 +16,13 @@ Import-PowerCLI
 
 $PSModuleAutoloadingPreference = 'none'
 
-#Identify path this script is located in
+# Identify path this script is located in
 $scriptPath = split-path -parent $MyInvocation.MyCommand.Definition
 # ... and import globals script
 . "$scriptPath\TemplateGlobals.ps1"
 
-Set-PowerCLIConfiguration -ProxyPolicy NoProxy -Confirm:$false
+# Uncomment if you need proxy configuration
+#Set-PowerCLIConfiguration -ProxyPolicy NoProxy -Confirm:$false
 
 $pass = read-host -prompt "Enter password" -AsSecureString 
 

@@ -12,10 +12,12 @@ Scripts related to the generation of Outlook distribution lists from CSV files a
 ### CsvToOutlookDistList.ps1
 
 * Reads from CSV file including first name, last name and e-mail and creates Outlook distribution list.
+** Note: This script needs to be run with the user whose Outlook mail box you wish to access.
 
 ### OutlookDistListToCsv.ps1
 
 * Reads from Outlook distribution list and generates CSV.
+** Note: This script needs to be run with the user whose Outlook mail box you wish to access.
 
 ## PowerCLI
 
@@ -34,7 +36,8 @@ In PowerShell you will need to enable the execution of scripts (`Set-ExecutionPo
 #### ConnectToVSphere.ps1
 
 * Change `username` in script to administrative username.
-* Run this script (as administrator) to connect to vSphere before running ManageVAppsForDistListMembers.ps1.
+* Run this script (as regular user) to connect to vSphere before running ManageVAppsForDistListMembers.ps1.
+** If you require proxy configuration, uncomment the line `Set-PowerCLIConfiguration ...`. Note that this will require you to run the script as administrator.
 
 #### ManageVAppsForDistListMembers.ps1
 
