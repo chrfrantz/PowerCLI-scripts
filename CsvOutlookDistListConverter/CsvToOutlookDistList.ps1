@@ -1,13 +1,21 @@
 ﻿<#
-    Instructions
+
+    Purpose: This script generates a Outlook distribution list from a given CSV file (requires at least first name, last name and e-mail address).
+
+    Instructions:
+    - Start PowerShell ISE
+    - Activate script execution in PowerShell ISE (Command: Set-ExecutionPolicy RemoteSigned)
+    - Start Outlook
     - Specify desired distribution list name
     - Choose CSV file name
     - Set column headers correctly
     - Ensure that your shell is in the same directory the CSV file is located in
+    - Run script
+    - Deactivate script execution (security risk): Set-ExecutionPolicy Restricted
     
     Author: Christopher Frantz
+    URL: https://github.com/chrfrantz/PowerShell-scripts.git
 #>
-
 
 #Distribution list name in Outlook to be created
 $distListName = 'OutlookDistributionList'

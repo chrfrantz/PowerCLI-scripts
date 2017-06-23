@@ -1,11 +1,20 @@
 ﻿<#
-    Instructions
-    - Specify source distribution list name
+
+    Purpose: This script generates a CSV file from an Outlook Distribution List.
+
+    Instructions:
+    - Start PowerShell ISE
+    - Activate script execution in PowerShell ISE (Command: Set-ExecutionPolicy RemoteSigned)
+    - Start Outlook
+    - Specify desired distribution list name
     - Choose CSV file name
-    - Adjust columns if desired
+    - Set column headers correctly
     - Ensure that your shell is in the same directory the CSV file is located in
+    - Run script
+    - Deactivate script execution (security risk): Set-ExecutionPolicy Restricted
     
     Author: Christopher Frantz
+    URL: https://github.com/chrfrantz/PowerShell-scripts.git
 #>
 
 #Distribution list name in Outlook
