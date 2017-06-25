@@ -4,13 +4,13 @@
 
     Instructions:
     - Start PowerShell ISE
-    - Activate script execution in PowerShell ISE (Command: Set-ExecutionPolicy RemoteSigned)
+    - Activate script execution in PowerShell ISE (Command: Set-ExecutionPolicy RemoteSigned) and confirm dialog
     - Start Outlook
     - Specify desired distribution list name
     - Choose CSV file name
     - Set column headers correctly
-    - Ensure that your shell is in the same directory the CSV file is located in
-    - Run script
+    - Ensure that your shell is in the same directory the CSV file is located in (e.g. H: if the CSV file is lies on your H drive)
+    - Run script (and check your Outlook contacts for the generated list after that)
     - Deactivate script execution (security risk): Set-ExecutionPolicy Restricted
     
     Author: Christopher Frantz
